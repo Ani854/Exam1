@@ -77,7 +77,7 @@ public class TaxiService {
 
     public Taxi task6(Taxi[] taxis) {
         Taxi smallWeight = taxis[0];
-        for (int i = 1; i < taxis.length - 1; i++) {
+        for (int i = 1; i < taxis.length; i++) {
             if (smallWeight.getWeight() > taxis[i].getWeight()) {
                 smallWeight = taxis[i];
             }
@@ -87,7 +87,7 @@ public class TaxiService {
 
     public Taxi task7(Taxi[] taxis) {
         Taxi sportTaxi = null;
-        for (int i = 0; i < taxis.length - 1; i++) {
+        for (int i = 0; i < taxis.length; i++) {
             if (sportTaxi == null) {
                 if (taxis[i].isSport()) {
                     sportTaxi = taxis[i];
